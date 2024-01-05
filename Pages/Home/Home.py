@@ -29,7 +29,7 @@ def show():
 
     st.subheader("Snowflake Marketplace")
 
-    st.image("pages/image/snowflake_marketplace.png")
+    # st.image("pages/image/snowflake_marketplace.png")
 
     st.markdown("""  
         The Snowflake Marketplace is a thriving hub for data and applications within the Snowflake Data Cloud. 
