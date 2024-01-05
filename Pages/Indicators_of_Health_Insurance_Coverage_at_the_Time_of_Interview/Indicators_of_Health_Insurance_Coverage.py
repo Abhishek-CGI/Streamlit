@@ -29,22 +29,22 @@ def show():
     st.subheader('Key Features')
 
     # Create an expandable box
-    with st.expander("**Dynamic Indicators** 💡"):
+    with st.expander("**Dynamic Indicators**"):
         # Content inside the expandable box
         st.write("The dataset captures a dynamic range of health insurance indicators, reflecting the evolving landscape of coverage-related factors.")
         
     # Create an expandable box
-    with st.expander("**Temporal Dimension** 💡"):
+    with st.expander("**Temporal Dimension**"):
         # Content inside the expandable box
         st.write("With a temporal dimension, analysts can delve into trends over time, identifying patterns, fluctuations, and potential long-term impacts of policy changes.")
         
     # Create an expandable box
-    with st.expander("**Demographic Insights** 💡"):
+    with st.expander("**Demographic Insights**"):
         # Content inside the expandable box
         st.write("The inclusion of subgroup data allows for a closer examination of how health insurance coverage varies among different demographic categories within each state.")
         
     # Create an expandable box
-    with st.expander("**Data Quality Assurance** 💡"):
+    with st.expander("**Data Quality Assurance**"):
         # Content inside the expandable box
         st.write("The dataset incorporates confidence intervals and suppression flags, enabling users to gauge the reliability of reported values and identify instances where data may be suppressed due to privacy concerns.")
         

@@ -29,22 +29,22 @@ def show():
     st.subheader('Datasets')
 
     # Create an expandable box
-    with st.expander("**DRAW DATE** 💡"):
+    with st.expander("**DRAW DATE**  "):
         # Content inside the expandable box
         st.write("This column represents specific date when the Powerball drawing occurred.")
         
     # Create an expandable box
-    with st.expander("**WINNING NUMBERS** 💡"):
+    with st.expander("**WINNING NUMBERS**  "):
         # Content inside the expandable box
         st.write("This column represents numbers drawn as the winning combination for the respective draw. This column likely stores an array of integers representing the winning numbers.")
         
     # Create an expandable box
-    with st.expander("**BONUS** 💡"):
+    with st.expander("**BONUS**  "):
         # Content inside the expandable box
         st.write("This column represents Bonus number drawn in the NY Lotto. The bonus number is an additional number drawn in some lotteries, which can contribute to additional prize categories. ")
     
     # Create an expandable box
-    with st.expander("**EXTRA** 💡"):
+    with st.expander("**EXTRA**  "):
         # Content inside the expandable box
         st.write("This column represents Extra information related to the NY Lotto drawing.This column may contain supplementary information or details about the drawing, such as special events or promotions.")
     

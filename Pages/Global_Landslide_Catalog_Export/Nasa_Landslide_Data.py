@@ -28,7 +28,7 @@ def show():
     st.subheader('Datasets')
 
     # Create an expandable box
-    with st.expander("**Global Landslide Data** 💡"):
+    with st.expander("**Global Landslide Data**"):
         # Content inside the expandable box
         st.write("The dataset that documents instances of landslides worldwide over the specified period. Landslides are geological events characterized by the movement of rock, soil, and debris down a slope. This dataset likely includes information about the location, date, and characteristics of landslides that occurred across the globe between 1988 and 2017.")
         

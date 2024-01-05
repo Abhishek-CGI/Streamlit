@@ -28,32 +28,32 @@ def show():
     st.subheader('Factors Contributing to Churn')
 
     # Create an expandable box
-    with st.expander("**Financial Performance** 💡"):
+    with st.expander("**Financial Performance**"):
         # Content inside the expandable box
         st.write("Changes in a customer's financial situation, such as reduced income, increased debt, or unemployment, can lead to decreased engagement with banking services.")
         
     # Create an expandable box
-    with st.expander("**Service Dissatisfaction** 💡"):
+    with st.expander("**Service Dissatisfaction**"):
         # Content inside the expandable box
         st.write("Poor customer service experiences, unresolved issues, or dissatisfaction with the quality of services provided by the bank can drive customers to seek alternatives. ")
         
     # Create an expandable box
-    with st.expander("**Competitive Offerings** 💡"):
+    with st.expander("**Competitive Offerings**"):
         # Content inside the expandable box
         st.write("Customers might be enticed by competitive offerings from other banks, such as better interest rates, lower fees, or innovative financial products.")
         
     # Create an expandable box
-    with st.expander("**Life Events** 💡"):
+    with st.expander("**Life Events**"):
         # Content inside the expandable box
         st.write("Major life events like relocation, marriage, divorce, or retirement can prompt customers to reassess their banking relationships and potentially switch to institutions that better align with their changing needs.")
         
     # Create an expandable box
-    with st.expander("**Lack of Relevance** 💡"):
+    with st.expander("**Lack of Relevance**"):
         # Content inside the expandable box
         st.write("If a bank fails to offer personalized solutions and relevant financial products to customers, they may feel neglected and seek banking services elsewhere.")
         
     # Create an expandable box
-    with st.expander("**Technological Changes** 💡"):
+    with st.expander("**Technological Changes**"):
         # Content inside the expandable box
         st.write("Rapid advancements in digital technology and online banking can influence customer preferences, causing them to shift to banks that offer more convenient and user-friendly digital experiences.")
     

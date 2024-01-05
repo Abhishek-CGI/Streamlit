@@ -52,12 +52,12 @@ def show():
     st.subheader('Datasets')
 
     # Create an expandable box
-    with st.expander("**FDIC Failed Bank List** 💡"):
+    with st.expander("**FDIC Failed Bank List**"):
         # Content inside the expandable box
         st.write("The FDIC's failed bank list is a comprehensive record of banks and financial institutions that have been closed or taken over by the Federal Deposit Insurance Corporation due to financial distress or insolvency. This list is maintained by the FDIC on its official website and is regularly updated to reflect the status of failed banks.")
         
     # Create an expandable box
-    with st.expander("**FDIC Insured Bank List** 💡"):
+    with st.expander("**FDIC Insured Bank List**"):
         # Content inside the expandable box
         st.write("An FDIC insured financial institution is a bank or savings association that is covered by deposit insurance provided by the Federal Deposit Insurance Corporation (FDIC) in the United States. When a bank is insured by the FDIC, it means that the deposits held by customers in that institution are protected up to certain limits in case the bank experiences financial difficulties, fails, or is closed.")
 
