@@ -38,38 +38,38 @@ def show():
 
         What it offers:
 
-        Data: Over 530 providers offer a staggering 2,300+ live, ready-to-use datasets covering diverse areas like 
+        -  **Data:**  Over 530 providers offer a staggering 2,300+ live, ready-to-use datasets covering diverse areas like 
         financial markets, public health, customer demographics, and even weather data. You can access free and 
         paid datasets, catering to a variety of budgets and analytical needs.
 
-        Services: Enhance your data journey with services like data governance, security, and compliance solutions,
+        -  **Services:**  Enhance your data journey with services like data governance, security, and compliance solutions,
         data anonymization, or even data transformation tools. These services help you manage your data effectively
         and securely within the Snowflake platform.
 
-        Snowflake Native Apps: These are pre-built applications specifically designed to run natively on Snowflake,
+        -  **Snowflake Native Apps:**  These are pre-built applications specifically designed to run natively on Snowflake,
         offering seamless integration and optimized performance. You can find apps for data visualization, business
         intelligence, data science, and more, empowering you to quickly extract insights from your data.
 
-        Benefits for users:
+        **Benefits for users:**
 
-        Faster time to insights: No need to build data pipelines or manage complex integrations. Simply discover 
+        -  **Faster time to insights:**  No need to build data pipelines or manage complex integrations. Simply discover 
         and access the data and tools you need directly within the Snowflake environment, accelerating your 
         analytics process.
 
-        Wider data variety: Go beyond your own data and tap into a vast marketplace of external datasets, enriching
+        -  **Wider data variety:**  Go beyond your own data and tap into a vast marketplace of external datasets, enriching
         your analyses and unlocking new possibilities.
 
-        Simplified data management: Access data governance, security, and other services readily available in the 
+        -  **Simplified data management:** Access data governance, security, and other services readily available in the 
         marketplace, alleviating the burden of managing these aspects yourself.
 
-        Streamlined app development: Leverage pre-built Snowflake Native Apps to build data-driven applications 
+        -  **Streamlined app development:**  Leverage pre-built Snowflake Native Apps to build data-driven applications 
         faster and more efficiently.
 
         Overall, the Snowflake Marketplace provides a one-stop shop for organizations to:
 
-        Find the data and tools they need to fuel their data-driven initiatives.
-        Simplify and accelerate their data analysis and application development processes.
-        Unlock new insights and possibilities from a wider range of data sources.
+        - Find the data and tools they need to fuel their data-driven initiatives.
+        - Simplify and accelerate their data analysis and application development processes.
+        - Unlock new insights and possibilities from a wider range of data sources.
     """)
 
     st.subheader("SnowChat")
