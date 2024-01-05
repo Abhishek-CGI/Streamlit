@@ -1,4 +1,5 @@
 import streamlit as st
+from Pages import Home
 from Pages.Bank_Marketing import Bank_Churn_Customers
 from Pages.Banking_Analytics_Bundle import FDIC, Fred_Financial_Labor_Performance, Fred_Interest_rate_data, Fred_unemployement_rate
 # from Pages.Consumer_Financial_Protection_Bureau_Analysis import FDIC, Fred_Financial_Labor_Performance, Fred_Interest_rate_data, Fred_unemployement_rate
@@ -15,8 +16,17 @@ from Pages.SEC_Analytics import Sec
 
 # Main Streamlit app
 def main():
-    st.sidebar.title("Home")
-    selected_page = st.sidebar.selectbox("Select", ["Bank Marketing",
+    # Create two columns
+    col1, col2 = st.sidebar.columns([1, 5])
+
+# Add the logo to the first column
+    col2.image("pages/image/Insights by CG Infinity 1.png", width=150)
+
+# Add the text to the second column
+    col1.write(" ")
+    # st.sidebar.title("Home")
+    selected_page = st.sidebar.selectbox("Select", ["Home",
+                                                    "Bank Marketing",
                                                    "Banking Analytics Bundle",
                                                    "Consumer Financial Protection Bureau Analysis",
                                                    "Demographics Data Bundle",
@@ -28,11 +38,14 @@ def main():
                                                    "Layoff Data",
                                                    "Lottery Mega Millions Winning Numbers",
                                                    "National Credit Union Administration",
-                                                   "SEC Analytics"])
+                                                   "SEC Analytics",
+                                                   ])
 
 
 
-    if selected_page == "Bank Marketing":
+    if selected_page == "Home":
+        Home.show()
+    elif selected_page == "Bank Marketing":
         selected_dataset = st.sidebar.selectbox("Select Bank Marketing Dataset", ["Bank_Churn_Customers"])
         if selected_dataset == "Bank_Churn_Customers":
             Bank_Churn_Customers.show()
