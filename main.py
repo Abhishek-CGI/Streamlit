@@ -20,7 +20,7 @@ def main():
     col1, col2 = st.sidebar.columns([1, 5])
 
 # Add the logo to the first column
-    col2.image("pages/image/Insights by CG Infinity 1.png", width=150)
+    col2.image("Pages/image/Insights by CG Infinity 1.png", width=150)
 
 # Add the text to the second column
     col1.write(" ")
