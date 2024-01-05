@@ -2,13 +2,13 @@ import streamlit as st
 
 def show():
     # Create two columns
-    col1, col2 = st.columns([1, 5])
+    # col1, col2 = st.columns([1, 5])
 
 # Add the logo to the first column
-    col1.image("pages\image\Insights by CG Infinity 1.png", width=100)
+    # col1.image("pages\image\Insights by CG Infinity 1.png", width=100)
 
 # Add the text to the second column
-    col2.write("# FRED - Financial Labor Performance")
+    st.write("# FRED - Financial Labor Performance")
 
 
 # # Text to be displayed in the blue box
