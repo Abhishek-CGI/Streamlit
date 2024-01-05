@@ -8,13 +8,13 @@ def show():
     # )
 
     # Create two columns
-    col1, col2 = st.columns([1, 5])
+    # col1, col2 = st.columns([1, 5])
 
     # Add the logo to the first column
-    col1.image("Pages/image/Insights by CG Infinity 1.png", width=100)
+    # col1.image("Pages/image/Insights by CG Infinity 1.png", width=100)
 
     # Add the text to the second column
-    col2.write("# Welcome to InSights Data!")
+    st.write("# Welcome to InSights Data!")
 
     # st.sidebar.success("Select a documentations above.")
 
@@ -29,7 +29,7 @@ def show():
 
     st.subheader("Snowflake Marketplace")
 
-    # st.image("pages/image/snowflake_marketplace.png")
+    st.image("Pages/image/snowflake_marketplace.png", width=700)
 
     st.markdown("""  
         The Snowflake Marketplace is a thriving hub for data and applications within the Snowflake Data Cloud. 
