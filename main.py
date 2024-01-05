@@ -50,15 +50,15 @@ def main():
         if selected_dataset == "Bank_Churn_Customers":
             Bank_Churn_Customers.show()
     elif selected_page == "Banking Analytics Bundle":
-        selected_dataset = st.sidebar.selectbox("Select Banking Analytics Bundle Dataset", ["FDIC", "Fred_Financial_Labor_Performance", "Fred_Interest_rate_data", "Fred_unemployement_rate"])
+        selected_dataset = st.sidebar.selectbox("Select Banking Analytics Bundle Dataset", ["FDIC", "Fred_Financial_Labor_Performance", "Fred_Interest_rate_data", "fred_unemployement_rate"])
         if selected_dataset == "FDIC":
             FDIC.show()
         elif selected_dataset == "Fred_Financial_Labor_Performance":
             Fred_Financial_Labor_Performance.show()
         elif selected_dataset == "Fred_Interest_rate_data":
             Fred_Interest_rate_data.show()
-        elif selected_dataset == "Fred_unemployement_rate":
-            Fred_unemployement_rate.show()
+        elif selected_dataset == "fred_unemployement_rate":
+            fred_unemployement_rate.show()
     # elif selected_page == "Consumer Financial Protection Bureau Analysis":
     #     selected_dataset = st.sidebar.selectbox("Select Consumer Financial Protection Bureau Analysis Dataset", ["sec"])
     #     sec.show(selected_dataset)
@@ -97,9 +97,9 @@ def main():
         if selected_dataset == "Credit_Union_Information":
             Credit_Union_Information.show()
     elif selected_page == "SEC Analytics":
-        selected_dataset = st.sidebar.selectbox("Select SEC Analytics", ["Sec"])
-        if selected_dataset == "Sec":
-            Sec.show()
+        selected_dataset = st.sidebar.selectbox("Select SEC Analytics", ["sec"])
+        if selected_dataset == "sec":
+            sec.show()
 
 
 if __name__ == "__main__":
