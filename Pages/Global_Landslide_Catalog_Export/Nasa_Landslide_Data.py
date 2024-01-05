@@ -4,13 +4,13 @@ def show():
     # st.set_page_config(page_title="Nasa Landslide Data", page_icon="pages/image/logo.png")
 
     # Create two columns
-    col1, col2 = st.columns([1, 5])
+    # col1, col2 = st.columns([1, 5])
 
     # Add the logo to the first column
     # col1.image("pages\image\Insights by CG Infinity 1.png", width=100)
 
     # Add the text to the second column
-    col2.write("# Nasa Landslide Data")
+    st.write("# Nasa Landslide Data")
 
 
     # Text to be displayed in the blue box

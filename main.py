@@ -12,7 +12,7 @@ from Pages.Indicators_of_Health_Insurance_Coverage_at_the_Time_of_Interview impo
 from Pages.Layoff_Data import Warn_Layoff_Data
 from Pages.Lottery_Mega_Millions_Winning_Numbers import Lottery_Mega_millions_winning_numbers,Lottery_NY_Lotto_Winning_Numbers,Lottery_powerball_Winning_Numbers
 from Pages.National_Credit_Union_Administration import Credit_Union_Information
-from Pages.SEC_Analytics import Sec
+from Pages.SEC_Analytics import sec
 
 # Main Streamlit app
 def main():
