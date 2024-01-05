@@ -1,7 +1,7 @@
 import streamlit as st
 from Pages import Home
 from Pages.Bank_Marketing import Bank_Churn_Customers
-from Pages.Banking_Analytics_Bundle import FDIC, Fred_Financial_Labor_Performance, Fred_Interest_rate_data, Fred_unemployement_rate
+from Pages.Banking_Analytics_Bundle import FDIC, Fred_Financial_Labor_Performance, Fred_Interest_rate_data, fred_unemployement_rate
 # from Pages.Consumer_Financial_Protection_Bureau_Analysis import FDIC, Fred_Financial_Labor_Performance, Fred_Interest_rate_data, Fred_unemployement_rate
 from Pages.Demographics_Data_Bundle import Demographics_Statistics_By_Zip_Code
 # from Pages.Electric_Vehicle_Trends import FDIC, Fred_Financial_Labor_Performance, Fred_Interest_rate_data, Fred_unemployement_rate
@@ -12,7 +12,7 @@ from Pages.Indicators_of_Health_Insurance_Coverage_at_the_Time_of_Interview impo
 from Pages.Layoff_Data import Warn_Layoff_Data
 from Pages.Lottery_Mega_Millions_Winning_Numbers import Lottery_Mega_millions_winning_numbers,Lottery_NY_Lotto_Winning_Numbers,Lottery_powerball_Winning_Numbers
 from Pages.National_Credit_Union_Administration import Credit_Union_Information
-from Pages.SEC_Analytics import Sec
+from Pages.SEC_Analytics import sec
 
 # Main Streamlit app
 def main():
