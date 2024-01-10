@@ -10,7 +10,7 @@ def show():
     # col1.image("pages\image\Insights by CG Infinity 1.png", width=100)
 
     # Add the text to the second column
-    st.write("Federal Deposit Insurance Corporation Data")
+    st.write("# Federal Deposit Insurance Corporation Data")
 
 
     # # Text to be displayed in the blue box
@@ -38,7 +38,7 @@ def show():
 
     # Display the text in a blue box with custom styling
     st.markdown(
-        f'<div style="background-color: #D9EAF8; padding: 20px; border-radius: 10px;">{info_text}</div>',
+        f'<div style="background-color: #D3D3D3; padding: 20px; border-radius: 10px;">{info_text}</div>',
         unsafe_allow_html=True,
     )
 
