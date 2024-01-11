@@ -14,7 +14,7 @@ def show():
     # col1.image("Pages/image/Insights by CG Infinity 1.png", width=100)
 
     # Add the text to the second column
-    st.write("# Welcome to InSights Data!")
+    st.write("# Welcome to InSights by CG!")
 
     # st.sidebar.success("Select a documentations above.")
 
@@ -32,57 +32,41 @@ def show():
     st.image("Pages/image/snowflake_marketplace.png", width=700)
 
     st.markdown("""  
-        The Snowflake Marketplace is a thriving hub for data and applications within the Snowflake Data Cloud. 
-        It as a bustling marketplace where organizations can acquire and share resources to fuel their data-driven
-        initiatives. Here's a breakdown of its key features:
+        Snowflake Marketplace: Central hub for data and applications in the Snowflake Data Cloud, enabling
+        organizations to easily acquire and share resources for data-driven initiatives.Here's a breakdown of its key features
 
         What it offers:
 
-        -  **Data:**  Over 530 providers offer a staggering 2,300+ live, ready-to-use datasets covering diverse areas like 
-        financial markets, public health, customer demographics, and even weather data. You can access free and 
-        paid datasets, catering to a variety of budgets and analytical needs.
+        -  **Diverse Data:** Access 2,300+ datasets from 530+ providers, spanning finance, health, demographics, and weather.
 
-        -  **Services:**  Enhance your data journey with services like data governance, security, and compliance solutions,
-        data anonymization, or even data transformation tools. These services help you manage your data effectively
-        and securely within the Snowflake platform.
+        -  **Comprehensive Services:** Explore data governance, security, compliance solutions, anonymization, and transformation tools.
 
-        -  **Snowflake Native Apps:**  These are pre-built applications specifically designed to run natively on Snowflake,
-        offering seamless integration and optimized performance. You can find apps for data visualization, business
-        intelligence, data science, and more, empowering you to quickly extract insights from your data.
+        -  **Native Apps:** Optimize performance with pre-built applications for data visualization, business intelligence, and data science,
+         designed to run seamlessly on Snowflake.
 
         **Benefits for users:**
 
-        -  **Faster time to insights:**  No need to build data pipelines or manage complex integrations. Simply discover 
-        and access the data and tools you need directly within the Snowflake environment, accelerating your 
-        analytics process.
+        -  **Accelerated Analytics:** Save time on data pipelines and integrations within Snowflake, speeding up the path to insights.
 
-        -  **Wider data variety:**  Go beyond your own data and tap into a vast marketplace of external datasets, enriching
-        your analyses and unlocking new possibilities.
+        -  **Enhanced Data Exploration:** Access a diverse marketplace of external datasets to enrich analyses and discover new opportunities.
 
-        -  **Simplified data management:** Access data governance, security, and other services readily available in the 
-        marketplace, alleviating the burden of managing these aspects yourself.
+        -  **Easy Data Management:** Utilize readily available data governance and security services, simplifying data management tasks.
 
-        -  **Streamlined app development:**  Leverage pre-built Snowflake Native Apps to build data-driven applications 
-        faster and more efficiently.
-
-        Overall, the Snowflake Marketplace provides a one-stop shop for organizations to:
-
-        - Find the data and tools they need to fuel their data-driven initiatives.
-        - Simplify and accelerate their data analysis and application development processes.
-        - Unlock new insights and possibilities from a wider range of data sources.
+        -  **Efficient App Development:** Quickly build data-driven applications with pre-built Snowflake Native Apps, streamlining 
+           development processes.
     """)
 
-    st.subheader("SnowChat")
+    # st.subheader("SnowChat")
 
-    st.markdown(
-        """snowChat is an intuitive and user-friendly application that allows users to interact with their 
-        Snowflake data using natural language queries. Type in your questions or requests, and SnowChat will 
-        generate the appropriate SQL query and return the data you need. No more complex SQL queries or digging 
-        through tables - SnowChat makes it easy to access your data! By bringing data one step closer, SnowChat 
-        empowers users to make data-driven decisions faster and more efficiently, reducing the barriers between 
-        users and the insights they seek.
-        """
-    )
+    # st.markdown(
+    #     """snowChat is an intuitive and user-friendly application that allows users to interact with their 
+    #     Snowflake data using natural language queries. Type in your questions or requests, and SnowChat will 
+    #     generate the appropriate SQL query and return the data you need. No more complex SQL queries or digging 
+    #     through tables - SnowChat makes it easy to access your data! By bringing data one step closer, SnowChat 
+    #     empowers users to make data-driven decisions faster and more efficiently, reducing the barriers between 
+    #     users and the insights they seek.
+    #     """
+    # )
 
     st.subheader("Data Products")
 

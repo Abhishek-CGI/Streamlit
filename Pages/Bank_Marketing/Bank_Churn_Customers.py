@@ -98,30 +98,30 @@ def show():
 
     st.subheader('Business Needs')
 
-    business_needs = """
+    # business_needs = """
 
-    Churn for Bank Customers refers to the phenomenon where customers discontinue their banking relationship with a particular bank and shift their accounts  or business to another financial institution. 
+    # Churn for Bank Customers refers to the phenomenon where customers discontinue their banking relationship with a particular bank and shift their accounts  or business to another financial institution. 
 
-    **Churn Analysis**:  
+    # **Churn Analysis**:  
 
-    - The table allows tracking customer churn by storing relevant information like customer ID, credit score, geography, gender, age, tenure, balance, number of products, credit card status, active membership, estimated salary, and exit status.  
+    # - The table allows tracking customer churn by storing relevant information like customer ID, credit score, geography, gender, age, tenure, balance, number of products, credit card status, active membership, estimated salary, and exit status.  
 
-    **Product Analysis**:  
+    # **Product Analysis**:  
 
-    - The "NUM_OF_PRODUCTS" field can be used to analyze the number of products or services each customer is using. This information can guide the bank's efforts to upsell or cross-sell additional products to customers who have a lower product count. 
+    # - The "NUM_OF_PRODUCTS" field can be used to analyze the number of products or services each customer is using. This information can guide the bank's efforts to upsell or cross-sell additional products to customers who have a lower product count. 
 
-    **Marketing Campaigns**: 
+    # **Marketing Campaigns**: 
 
-    - The table can aid in designing targeted marketing campaigns based on various customer attributes.  
+    # - The table can aid in designing targeted marketing campaigns based on various customer attributes.  
 
-    - The bank could promote specific products to customers with certain characteristics or create tailored offers to prevent churn. 
+    # - The bank could promote specific products to customers with certain characteristics or create tailored offers to prevent churn. 
 
-    **Customer Experience Enhancement**:  
+    # **Customer Experience Enhancement**:  
 
-    - By analyzing customer data and churn reasons, the bank can identify pain points in the customer journey and make improvements to enhance overall customer experience. 
+    # - By analyzing customer data and churn reasons, the bank can identify pain points in the customer journey and make improvements to enhance overall customer experience. 
 
 
-    """
+    # """
 
     # Display the text in a blue box with custom styling
     st.markdown("""

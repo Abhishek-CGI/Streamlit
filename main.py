@@ -1,6 +1,6 @@
 import streamlit as st
 from Pages.Home import Home
-from Pages.Bank_Marketing import Bank_Churn_Customers
+from Pages.Bank_Marketing import Bank_Churn_Customers,Bank_Marketing
 from Pages.Banking_Analytics_Bundle import FDIC, Fred_Financial_Labor_Performance, Fred_Interest_rate_data, fred_unemployement_rate
 from Pages.Consumer_Financial_Protection_Bureau_Analysis import Consumer_Financial_Protection_Bureau_Analysis
 from Pages.Demographics_Data_Bundle import Demographics_Statistics_By_Zip_Code
@@ -48,9 +48,11 @@ def main():
         if selected_dataset == "Home":
             Home.show()
     elif selected_page == "Bank Marketing":
-        selected_dataset = st.sidebar.selectbox("Select Bank Marketing Dataset", ["Bank_Churn_Customers"])
+        selected_dataset = st.sidebar.selectbox("Select Bank Marketing Dataset", ["Bank_Churn_Customers","Bank_Marketing"])
         if selected_dataset == "Bank_Churn_Customers":
             Bank_Churn_Customers.show()
+        elif selected_dataset == "Bank_Marketing":
+            Bank_Marketing.show()
     elif selected_page == "Banking Analytics Bundle":
         selected_dataset = st.sidebar.selectbox("Select Banking Analytics Bundle Dataset", ["FDIC", "Fred_Financial_Labor_Performance", "Fred_Interest_rate_data", "fred_unemployement_rate"])
         if selected_dataset == "FDIC":
