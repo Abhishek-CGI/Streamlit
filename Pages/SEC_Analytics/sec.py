@@ -8,7 +8,7 @@ def show():
     # col1.image("pages\image\Insights by CG Infinity 1.png", width=100)
 
 # Add the text to the second column
-    st.write("# Federal Exchange Rates")
+    st.write("# Sec Analytics")
 
 
 # # Text to be displayed in the blue box
