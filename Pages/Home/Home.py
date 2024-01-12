@@ -33,16 +33,7 @@ def show():
 
     st.markdown("""  
         Snowflake Marketplace: Central hub for data and applications in the Snowflake Data Cloud, enabling
-        organizations to easily acquire and share resources for data-driven initiatives.Here's a breakdown of its key features
-
-        What it offers:
-
-        -  **Diverse Data:** Access 2,300+ datasets from 530+ providers, spanning finance, health, demographics, and weather.
-
-        -  **Comprehensive Services:** Explore data governance, security, compliance solutions, anonymization, and transformation tools.
-
-        -  **Native Apps:** Optimize performance with pre-built applications for data visualization, business intelligence, and data science,
-         designed to run seamlessly on Snowflake.
+        organizations to easily acquire and share resources for data-driven initiatives.Here's a breakdown of its key features.
 
         **Benefits for users:**
 

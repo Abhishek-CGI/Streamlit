@@ -1,5 +1,6 @@
 import streamlit as st
 from Pages.Home import Home
+# from Home import show
 from Pages.Bank_Marketing import Bank_Churn_Customers,Bank_Marketing
 from Pages.Banking_Analytics_Bundle import FDIC, Fred_Financial_Labor_Performance, Fred_Interest_rate_data, fred_unemployement_rate
 from Pages.Consumer_Financial_Protection_Bureau_Analysis import Consumer_Financial_Protection_Bureau_Analysis
@@ -16,6 +17,11 @@ from Pages.SEC_Analytics import sec
 
 # Main Streamlit app
 def main():
+
+    #Home button
+    if st.sidebar.button('Home'):
+        Home.show()
+        
     # Create two columns
     col1, col2 = st.sidebar.columns([1, 5])
 
@@ -25,8 +31,7 @@ def main():
 # Add the text to the second column
     col1.write(" ")
     # st.sidebar.title("Home")
-    selected_page = st.sidebar.selectbox("Search for the Listing", ["Home",
-                                                    "Bank Marketing",
+    selected_page = st.sidebar.selectbox("Search for the Listing", ["Bank Marketing",
                                                    "Banking Analytics Bundle",
                                                    "Consumer Financial Protection Bureau Analysis",
                                                    "Demographics Data Bundle",
@@ -43,11 +48,11 @@ def main():
 
 
 
-    if selected_page == "Home":
-        selected_dataset = st.sidebar.selectbox("Go To", ["Home"])
-        if selected_dataset == "Home":
-            Home.show()
-    elif selected_page == "Bank Marketing":
+    # if selected_page == "Home":
+    #     selected_dataset = st.sidebar.selectbox("Go To", ["Home"])
+    #     if selected_dataset == "Home":
+    #         Home.show()
+    if selected_page == "Bank Marketing":
         selected_dataset = st.sidebar.selectbox("Select Bank Marketing Dataset", ["Bank_Churn_Customers","Bank_Marketing"])
         if selected_dataset == "Bank_Churn_Customers":
             Bank_Churn_Customers.show()
