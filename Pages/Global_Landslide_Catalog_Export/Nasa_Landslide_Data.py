@@ -20,7 +20,7 @@ def show():
 
     # Display the text in a blue box with custom styling
     st.markdown(
-        f'<div style="background-color: #D9EAF8; padding: 20px; border-radius: 10px;">{info_text}</div>',
+        f'<div style="background-color: #D3D3D3; padding: 20px; border-radius: 10px;">{info_text}</div>',
         unsafe_allow_html=True,
     )
 
@@ -28,7 +28,7 @@ def show():
     st.subheader('Datasets')
 
     # Create an expandable box
-    with st.expander("**Global Landslide Data** 💡"):
+    with st.expander("**Global Landslide Data**"):
         # Content inside the expandable box
         st.write("The dataset that documents instances of landslides worldwide over the specified period. Landslides are geological events characterized by the movement of rock, soil, and debris down a slope. This dataset likely includes information about the location, date, and characteristics of landslides that occurred across the globe between 1988 and 2017.")
         
@@ -135,8 +135,32 @@ def show():
 
     # Display the text in a blue box with custom styling
     st.markdown(
-        f'<div style="background-color: #FFDBFC; padding: 20px; border-radius: 10px;">{business_needs}</div>',
-        unsafe_allow_html=True,
+        """
+
+    **Insurance Companies**: Insurance companies can use landslide data to assess the risk of property damage due to landslides, allowing them to adjust insurance premiums accordingly. 
+
+    **Construction Companies**: Companies involved in construction and infrastructure development can use landslide data to assess and mitigate the risk of landslides in their projects. 
+
+    **Environmental Agencies**: Government and non-governmental environmental agencies can use landslide data for environmental monitoring and assessment. This includes studying the impact of landslides on ecosystems and developing strategies for conservation. 
+
+    **Emergency Services**: Landslide data can be crucial for emergency services to plan and execute effective disaster response efforts, including evacuation procedures and resource allocation. 
+
+    **Government Agencies**: Government agencies responsible for disaster management can use landslide data for risk modeling, preparedness planning, and post-disaster recovery. 
+
+    **Researchers and Scientists**: Landslide datasets are valuable for researchers and scientists studying geology, climatology, and environmental science. They contribute to the understanding of landslide triggers, patterns, and impacts. 
+
+    **Urban Planning**: City planners and developers can use landslide data to make informed decisions about where to build infrastructure, avoiding areas prone to landslides. 
+
+    **Transportation Planning**: Landslide data can inform the planning and maintenance of roads, highways, and other transportation infrastructure to minimize the risk of disruptions. 
+
+    **Real Estate Developers**: Developers can use landslide data to assess the suitability of land for real estate projects, ensuring the safety and stability of structures. 
+
+    **Claims Adjusters**: Landslide data can be used by claims adjusters to assess the validity of insurance claims related to property damage caused by landslides. 
+
+    **Educational Institutions**: Landslide datasets can be valuable teaching tools in educational institutions for courses related to geoscience, geography, and environmental studies. 
+
+    **Public Awareness Campaigns**: Public awareness campaigns about landslide-prone areas and safety measures can benefit from accurate and up-to-date landslide data. 
+    """
     )
 
 

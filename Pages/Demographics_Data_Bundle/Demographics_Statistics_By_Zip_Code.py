@@ -21,7 +21,7 @@ def show():
 
     # Display the text in a blue box with custom styling
     st.markdown(
-        f'<div style="background-color: #D9EAF8; padding: 20px; border-radius: 10px;">{info_text}</div>',
+        f'<div style="background-color: #D3D3D3; padding: 20px; border-radius: 10px;">{info_text}</div>',
         unsafe_allow_html=True,
     )
 
@@ -130,8 +130,101 @@ def show():
 
     # Display the text in a blue box with custom styling
     st.markdown(
-        f'<div style="background-color:#FEFBA2; padding: 20px; border-radius: 10px;">{dataset_inc}</div>',
-        unsafe_allow_html=True,
+        """
+
+    **JURISDICTION_NAME** : Name or identifier of the jurisdiction (e.g., zip code) 
+
+    **COUNT_PARTICIPANTS** : Total count of participants within the jurisdiction 
+
+    **COUNT_FEMALE** : Count of participants who identify as female 
+
+    **PERCENT_FEMALE** : Percentage of participants who identify as female 
+
+    **COUNT_MALE** : Count of participants who identify as male 
+
+    **PERCENT_MALE** : Percentage of participants who identify as male 
+
+    **COUNT_GENDER_UNKNOWN** : Count of participants with unknown gender identity 
+
+    **PERCENT_GENDER_UNKNOWN** : Percentage of participants with unknown gender identity 
+
+    **COUNT_GENDER_TOTAL** : Total count of participants regardless of gender 
+
+    PERCENT_GENDER_TOTAL** : Percentage of the total count of participants 
+
+    **COUNT_PACIFIC_ISLANDER** : Count of participants who identify as Pacific Islander 
+
+    **PERCENT_PACIFIC_ISLANDER** : Percentage of participants who identify as Pacific Islander 
+
+    **COUNT_HISPANIC_LATINO** : Count of participants who identify as Hispanic or Latino 
+
+    **PERCENT_HISPANIC_LATINO** : Percentage of participants who identify as Hispanic or Latino 
+
+    **COUNT_AMERICAN_INDIAN** : Count of participants who identify as American Indian 
+
+    **PERCENT_AMERICAN_INDIAN** : Percentage of participants who identify as American Indian 
+
+    **COUNT_ASIAN_NON_HISPANIC** : Count of participants who identify as Asian (non-Hispanic) 
+
+    **PERCENT_ASIAN_NON_HISPANIC** : Percentage of participants who identify as Asian (non-Hispanic) 
+
+    **COUNT_WHITE_NON_HISPANIC** : Count of participants who identify as White (non-Hispanic) 
+
+    **PERCENT_WHITE_NON_HISPANIC** : Percentage of participants who identify as White (non-Hispanic) 
+
+    **COUNT_BLACK_NON_HISPANIC** : Count of participants who identify as Black (non-Hispanic) 
+
+    **PERCENT_BLACK_NON_HISPANIC** : Percentage of participants who identify as Black (non-Hispanic) 
+
+    **COUNT_OTHER_ETHNICITY** : Count of participants who identify with other ethnicities 
+
+    **PERCENT_OTHER_ETHNICIT** : Percentage of participants who identify with other ethnicities 
+
+    **COUNT_ETHNICITY_UNKNOWN** : Count of participants with unknown ethnicity 
+
+    **PERCENT_ETHNICITY_UNKNOWN** : Percentage of participants with unknown ethnicity 
+
+    **COUNT_ETHNICITY_TOTAL** : Total count of participants regardless of ethnicity 
+
+    **PERCENT_ETHNICITY_TOTAL** : Percentage of the total count of participants 
+
+    **COUNT_PERMANENT_RESIDENT_ALIEN** : Count of participants with permanent resident alien status 
+
+    **PERCENT_PERMANENT_RESIDENT_ALIEN** : Percentage of participants with permanent resident alien status 
+
+    **COUNT_US_CITIZEN** : Count of participants who are U.S. citizens 
+
+    **PERCENT_US_CITIZEN** : Percentage of participants who are U.S. citizens 
+
+    **COUNT_OTHER_CITIZEN_STATUS** : Count of participants with other citizen status 
+
+    **PERCENT_OTHER_CITIZEN_STATUS** : Percentage of participants with other citizen status 
+
+    **COUNT_CITIZEN_STATUS_UNKNOWN** : Count of participants with unknown citizen status 
+
+    **PERCENT_CITIZEN_STATUS_UNKNOWN** : Percentage of participants with unknown citizen status 
+
+    **COUNT_CITIZEN_STATUS_TOTAL** : Total count of participants regardless of citizen status 
+
+    **PERCENT_CITIZEN_STATUS_TOTAL** : Percentage of the total count of participants 
+
+    **COUNT_RECEIVES_PUBLIC_ASSISTANCE** : Count of participants receiving public assistance 
+
+    **PERCENT_RECEIVES_PUBLIC_ASSISTANCE** : Percentage of participants receiving public assistance 
+
+    **COUNT_NRECEIVES_PUBLIC_ASSISTANCE** : Count of participants not receiving public assistance 
+
+    **PERCENT_NRECEIVES_PUBLIC_ASSISTANCE** : Percentage of participants not receiving public assistance 
+
+    **COUNT_PUBLIC_ASSISTANCE_UNKNOWN** : Count of participants with unknown public assistance status 
+
+    **PERCENT_PUBLIC_ASSISTANCE_UNKNOWN** : Percentage of participants with unknown public assistance status 
+
+    **COUNT_PUBLIC_ASSISTANCE_TOTAL** : Total count of participants regardless of public assistance status 
+
+    **PERCENT_PUBLIC_ASSISTANCE_TOTAL** : Percentage of the total count of participants
+
+    """
     )
 
 

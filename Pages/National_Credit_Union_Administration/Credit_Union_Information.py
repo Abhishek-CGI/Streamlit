@@ -21,7 +21,7 @@ def show():
 
     # Display the text in a blue box with custom styling
     st.markdown(
-        f'<div style="background-color: #D9EAF8; padding: 20px; border-radius: 10px;">{info_text}</div>',
+        f'<div style="background-color: #D3D3D3; padding: 20px; border-radius: 10px;">{info_text}</div>',
         unsafe_allow_html=True,
     )
 
@@ -29,52 +29,52 @@ def show():
     st.subheader('Some of the prominent features and information provided by the NCUA include:')
 
     # Create an expandable box
-    with st.expander("**Deposit Insurance** 💡"):
+    with st.expander("**Deposit Insurance**  "):
         # Content inside the expandable box
         st.write("The NCUA administers the National Credit Union Share Insurance Fund (NCUSIF), which provides insurance coverage for member deposits in federally insured credit unions. The standard coverage is up to $250,000 per individual depositor, ensuring that members' deposits are protected in case of a credit union's failure.")
         
     # Create an expandable box
-    with st.expander("**Regulatory Guidance** 💡"):
+    with st.expander("**Regulatory Guidance**  "):
         # Content inside the expandable box
         st.write("The NCUA sets and enforces regulations and guidelines that govern credit union operations. It provides guidance to credit unions on compliance matters, helping them operate within the legal framework and ensuring financial safety and soundness.")
         
     # Create an expandable box
-    with st.expander("**Examination and Supervision** 💡"):
+    with st.expander("**Examination and Supervision**  "):
         # Content inside the expandable box
         st.write("The NCUA conducts regular examinations and on-site inspections of credit unions to assess their financial condition and compliance with regulations. This supervision helps identify potential risks and weaknesses, allowing for timely corrective actions.")
         
     # Create an expandable box
-    with st.expander("**Chartering and Field of Membership** 💡"):
+    with st.expander("**Chartering and Field of Membership**  "):
         # Content inside the expandable box
         st.write("The NCUA is responsible for granting federal charters to credit unions, allowing them to operate as federally chartered institutions. It also approves expansions of credit unions' fields of membership, enabling them to serve more individuals and communities.")
         
     # Create an expandable box
-    with st.expander("**Financial Literacy and Education** 💡"):
+    with st.expander("**Financial Literacy and Education**  "):
         # Content inside the expandable box
         st.write("The NCUA promotes financial literacy among credit union members and the general public. It offers educational resources, tools, and initiatives to improve financial knowledge and decision-making.")
         
     # Create an expandable box
-    with st.expander("**Consumer Complaints and Assistance** 💡"):
+    with st.expander("**Consumer Complaints and Assistance**  "):
         # Content inside the expandable box
         st.write("The NCUA handles consumer complaints related to credit unions and provides assistance to resolve issues between credit unions and their members.")
         
     # Create an expandable box
-    with st.expander("**Industry Data and Reports** 💡"):
+    with st.expander("**Industry Data and Reports**  "):
         # Content inside the expandable box
         st.write("The NCUA collects and publishes data on credit unions' financial performance, trends, and industry statistics. This information helps credit unions and stakeholders stay informed about the credit union sector's health and performance.")
         
     # Create an expandable box
-    with st.expander("**Risk Management Resources** 💡"):
+    with st.expander("**Risk Management Resources**  "):
         # Content inside the expandable box
         st.write("The NCUA offers risk management resources and best practices to help credit unions identify and manage potential risks effectively. ")
         
     # Create an expandable box
-    with st.expander("**Advocacy and Representation** 💡"):
+    with st.expander("**Advocacy and Representation**  "):
         # Content inside the expandable box
         st.write("The NCUA represents the credit union industry's interests at the federal level and advocates for policies that support the growth and sustainability of credit unions.")
         
     # Create an expandable box
-    with st.expander("**Cybersecurity and Technology Guidance** 💡"):
+    with st.expander("**Cybersecurity and Technology Guidance**  "):
         # Content inside the expandable box
         st.write("The NCUA provides guidance on cybersecurity and technology best practices to help credit unions protect sensitive information and digital assets.")
         

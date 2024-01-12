@@ -20,7 +20,7 @@ def show():
 
     # Display the text in a blue box with custom styling
     st.markdown(
-        f'<div style="background-color: #D9EAF8; padding: 20px; border-radius: 10px;">{info_text}</div>',
+        f'<div style="background-color: #D3D3D3; padding: 20px; border-radius: 10px;">{info_text}</div>',
         unsafe_allow_html=True,
     )
 
@@ -28,12 +28,12 @@ def show():
     st.subheader('Datasets')
 
     # Create an expandable box
-    with st.expander("**Warn Layoff by State Dataset** 💡"):
+    with st.expander("**Warn Layoff by State Dataset**"):
         # Content inside the expandable box
         st.write("The Warn Layoff by State dataset spans from the year 2005 to 2023. This dataset provides information on WARN (Worker Adjustment and Retraining Notification) layoff events across various states. The WARN Act requires employers to provide advance notice of significant layoffs or plant closures, giving affected workers and communities time to prepare for the economic consequences. The dataset likely includes details such as the location, date, and scale of layoffs within each state, offering insights into employment trends and workforce adjustments over the specified time frame.")
         
     # Create an expandable box
-    with st.expander("**Warn Layoff by Company Dataset** 💡"):
+    with st.expander("**Warn Layoff by Company Dataset**"):
         # Content inside the expandable box
         st.write("The Warn Layoff by Company dataset covers the period from 2005 to 2023. This dataset focuses on WARN layoff events categorized by individual companies. It provides information about layoffs and retraining notifications issued by specific companies during this timeframe. Analyzing this dataset can offer a detailed perspective on the labor market impacts of various companies, shedding light on workforce dynamics, economic challenges, and corporate restructuring efforts. The dataset likely includes details such as company names, locations, dates, and the number of affected workers for each WARN event.")
         
