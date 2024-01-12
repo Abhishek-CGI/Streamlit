@@ -1,11 +1,12 @@
 import streamlit as st
-from Pages import Home
-from Pages.Bank_Marketing import Bank_Churn_Customers
+from Pages.Home import Home
+# from Home import show
+from Pages.Bank_Marketing import Bank_Churn_Customers,Bank_Marketing
 from Pages.Banking_Analytics_Bundle import FDIC, Fred_Financial_Labor_Performance, Fred_Interest_rate_data, fred_unemployement_rate
-# from Pages.Consumer_Financial_Protection_Bureau_Analysis import FDIC, Fred_Financial_Labor_Performance, Fred_Interest_rate_data, Fred_unemployement_rate
+from Pages.Consumer_Financial_Protection_Bureau_Analysis import Consumer_Financial_Protection_Bureau_Analysis
 from Pages.Demographics_Data_Bundle import Demographics_Statistics_By_Zip_Code
-# from Pages.Electric_Vehicle_Trends import FDIC, Fred_Financial_Labor_Performance, Fred_Interest_rate_data, Fred_unemployement_rate
-# from Pages.Federal_Exchange_Rates import FDIC, Fred_Financial_Labor_Performance, Fred_Interest_rate_data, Fred_unemployement_rate
+from Pages.Electric_Vehicle_Trends import Electric_Vehicle_Trends
+from Pages.Federal_Exchange_Rates import Federal_Exchange_Rates
 from Pages.Federal_Financial_Institutions_Package import Federal_Deposit_Insurance_Corporation
 from Pages.Global_Landslide_Catalog_Export import Nasa_Landslide_Data
 from Pages.Indicators_of_Health_Insurance_Coverage_at_the_Time_of_Interview import Indicators_of_Health_Insurance_Coverage
@@ -16,6 +17,11 @@ from Pages.SEC_Analytics import sec
 
 # Main Streamlit app
 def main():
+
+    #Home button
+    if st.sidebar.button('Home'):
+        Home.show()
+        
     # Create two columns
     col1, col2 = st.sidebar.columns([1, 5])
 
@@ -25,8 +31,7 @@ def main():
 # Add the text to the second column
     col1.write(" ")
     # st.sidebar.title("Home")
-    selected_page = st.sidebar.selectbox("Select", ["Home",
-                                                    "Bank Marketing",
+    selected_page = st.sidebar.selectbox("Search for the Listing", ["Bank Marketing",
                                                    "Banking Analytics Bundle",
                                                    "Consumer Financial Protection Bureau Analysis",
                                                    "Demographics Data Bundle",
@@ -43,12 +48,16 @@ def main():
 
 
 
-    if selected_page == "Home":
-        Home.show()
-    elif selected_page == "Bank Marketing":
-        selected_dataset = st.sidebar.selectbox("Select Bank Marketing Dataset", ["Bank_Churn_Customers"])
+    # if selected_page == "Home":
+    #     selected_dataset = st.sidebar.selectbox("Go To", ["Home"])
+    #     if selected_dataset == "Home":
+    #         Home.show()
+    if selected_page == "Bank Marketing":
+        selected_dataset = st.sidebar.selectbox("Select Bank Marketing Dataset", ["Bank_Churn_Customers","Bank_Marketing"])
         if selected_dataset == "Bank_Churn_Customers":
             Bank_Churn_Customers.show()
+        elif selected_dataset == "Bank_Marketing":
+            Bank_Marketing.show()
     elif selected_page == "Banking Analytics Bundle":
         selected_dataset = st.sidebar.selectbox("Select Banking Analytics Bundle Dataset", ["FDIC", "Fred_Financial_Labor_Performance", "Fred_Interest_rate_data", "fred_unemployement_rate"])
         if selected_dataset == "FDIC":
@@ -59,23 +68,30 @@ def main():
             Fred_Interest_rate_data.show()
         elif selected_dataset == "fred_unemployement_rate":
             fred_unemployement_rate.show()
-    # elif selected_page == "Consumer Financial Protection Bureau Analysis":
-    #     selected_dataset = st.sidebar.selectbox("Select Consumer Financial Protection Bureau Analysis Dataset", ["sec"])
-    #     sec.show(selected_dataset)
+    elif selected_page == "Consumer Financial Protection Bureau Analysis":
+        selected_dataset = st.sidebar.selectbox("Select Consumer Financial Protection Bureau Analysis Dataset", ["Consumer_Financial_Protection_Bureau_Analysis"])
+        if selected_dataset == "Consumer_Financial_Protection_Bureau_Analysis":
+            Consumer_Financial_Protection_Bureau_Analysis.show()
     elif selected_page == "Demographics Data Bundle":
         selected_dataset = st.sidebar.selectbox("Select Demographics Data Bundle", ["Demographics_Statistics_By_Zip_Code"])
         if selected_dataset == "Demographics_Statistics_By_Zip_Code":
             Demographics_Statistics_By_Zip_Code.show()
-    # elif selected_page == "Electric Vehicle Trends":
-    #     selected_dataset = st.sidebar.selectbox("Select Electric Vehicle Trends", ["sec"])
-    #     sec.show(selected_dataset)
-    # elif selected_page == "Federal Exchange Rates":
-    #     selected_dataset = st.sidebar.selectbox("Select Federal Exchange Rates", ["sec"])
-    #     Federal_Financial_Institutions_Package.show(selected_dataset)
+    elif selected_page == "Electric Vehicle Trends":
+        selected_dataset = st.sidebar.selectbox("Select Electric Vehicle Trends", ["Electric_Vehicle_Trends"])
+        if selected_dataset == "Electric_Vehicle_Trends":
+            Electric_Vehicle_Trends.show()
+    elif selected_page == "Federal Exchange Rates":
+        selected_dataset = st.sidebar.selectbox("Select Federal Exchange Rates", ["Federal_Exchange_Rates"])
+        if selected_dataset == "Federal_Exchange_Rates":
+            Federal_Exchange_Rates.show()
     elif selected_page == "Federal Financial Institutions Package":
         selected_dataset = st.sidebar.selectbox("Select Federal Financial Institutions Package", ["Federal_Deposit_Insurance_Corporation"])
         if selected_dataset == "Federal_Deposit_Insurance_Corporation":
             Federal_Deposit_Insurance_Corporation.show()
+    elif selected_page == "Global Landslide Catalog Export":
+        selected_dataset = st.sidebar.selectbox("Select Global Landslide Catalog Export", ["Nasa_Landslide_Data"])
+        if selected_dataset == "Nasa_Landslide_Data":
+            Nasa_Landslide_Data.show()
     elif selected_page == "Indicators of Health Insurance Coverage at the Time of Interview":
         selected_dataset = st.sidebar.selectbox("Select Indicators of Health Insurance Coverage at the Time of Interview", ["Indicators_of_Health_Insurance_Coverage"])
         if selected_dataset == "Indicators_of_Health_Insurance_Coverage":
